@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon id="plugin.program.amoboxnotifications" version="3.0.0"
-       name="[COLOR blue][B]AMO[/B][/COLOR][COLOR blue]box[/COLOR] Notifications" provider-name="AdrXbmc">
+       name="[COLOR blue][B]AMO[/B][/COLOR][COLOR green]box[/COLOR] Notifications" provider-name="AdrXbmc">
   <requires>
   	<import addon="xbmc.python" version="2.1.0"/>
   	<import addon="script.module.addon.common" optional="true" />

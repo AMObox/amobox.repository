@@ -132,14 +132,14 @@ DefaultSplitter="|||";
 DefaultUrl="http://pastebin.com/raw.php?i=3civbeX7"; 
 class MyWindow(xbmcgui.WindowDialog): #xbmcgui.Window): ##xbmcgui.Window
 	scr={}; scr['L']=0; scr['T']=0; scr['W']=1280; scr['H']=720; 
-	def __init__(self,noteType='t',noteMessage='',noteImage='',L=140,T=110,W=1000,H=500,Font='font14',TxtColor='0xFF64d1ff'):
+	def __init__(self,noteType='t',noteMessage='',noteImage='',L=140,T=110,W=1000,H=500,Font='font14',TxtColor='0xFF000000'):
 		if len(noteImage)==0: noteImage=DefaultNoteImage
 		if   (noteType.lower()=='text')  or (noteType.lower()=='t'): noteType='t'
 		elif (noteType.lower()=='image') or (noteType.lower()=='i'): noteType='i'
 		self.noteType=noteType; self.noteMessage=noteMessage; self.noteImage=noteImage; self.Font=Font; self.TxtColor=TxtColor; 
 		## ### ## 
 		self.background=OverlayBackground; #artp('black1'); 
-		self.BG=xbmcgui.ControlImage(L,T,W,H,self.background,aspectRatio=0,colorDiffuse='0xFF3030FF'); 
+		self.BG=xbmcgui.ControlImage(L,T,W,H,self.background,aspectRatio=0,colorDiffuse='0xFFFFFFFF'); 
 		#self.OlayBrdr=xbmcgui.ControlImage(L,T,W,H,OverlayBorder,aspectRatio=0); 
 		#self.OlaySplash=xbmcgui.ControlImage(L,T,W,H,icon,aspectRatio=0); 
 		iLogoW=144; iLogoH=68; 
