@@ -67,4 +67,28 @@
     <platform>all</platform>
   </extension>
 </addon>
+
+<addon id="script.amoboxmaintenance"
+       name="AMObox Maintenance"
+       version="3.0.0"
+       provider-name="AdrXbmc">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>AMObox Maintinance</summary>
+    <description>
+	Your one stop tool for maintaining your device.
+    </description>
+    <language></language>
+    <license></license>
+    <source></source>
+    <forum></forum>
+    <website></website>
+  </extension>
+</addon>
 </addons>
