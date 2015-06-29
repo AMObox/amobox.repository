@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
 <addon id="amobox.repository" name="[COLOR blue][B]AMO[/B][/COLOR][COLOR blue]box[/COLOR] repository" version="3.0.0" provider-name="AdrXbmc">
-	<extension point="xbmc.addon.repository" name="AdrXbmc Repository">
+	<extension point="xbmc.addon.repository" name="AMObox Repository">
 		<info compressed="false">http://raw.github.com/adrxbmc/amobox.repository/master/addons.xml</info>
 		<checksum>http://raw.github.com/adrxbmc/amobox.repository/master/addons.xml.md5</checksum>
 		<datadir zip="true">http://raw.github.com/adrxbmc/amobox.repository/master/repo/</datadir>
@@ -18,6 +18,7 @@
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="plugin.program.amoboxwizard" version="3.0.0"/>
+	<import addon="plugin.program.amoboxnotifications" version="3.0.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>executable</provides>
@@ -29,11 +30,34 @@
   </extension>
 </addon>
 
+<addon id="plugin.program.amoboxnotifications" version="3.0.0"
+       name="[COLOR blue][B]AMO[/B][/COLOR][COLOR blue]box[/COLOR] Notifications" provider-name="AdrXbmc">
+  <requires>
+  	<import addon="xbmc.python" version="2.1.0"/>
+  	<import addon="script.module.addon.common" optional="true" />
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup">
+  </extension>
+  <extension point="xbmc.addon.metadata">
+  	<summary>AMObox boxNEWS</summary>
+  	<description>Receive Important Notifications from [COLOR blue][B]AMO[/B][/COLOR][COLOR blue]box[/COLOR]. Unsubscribe within Add-on Settings.</description>
+  	<disclaimer>We take no responsibility for any problems this plugin might in any way, form, shape or size cause.</disclaimer>
+  	<language>en</language>
+  	<platform>all</platform>
+  	<website>http://adrxbmc.blogspot.pt</website>
+  	<source></source>
+  	<email></email>
+  </extension>
+</addon>
+
 <addon id="plugin.program.amoboxwizard" name="[COLOR blue][B]AMO[/B][/COLOR][COLOR green][B]box[/B][/COLOR] Wizard" version="3.0.0" provider-name="AdrXbmc">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="plugin.program.amoboxcbtool" version="3.0.0"/>
-  </requires>
+	<import addon="plugin.program.amoboxnotifications" version="3.0.0"/>
+	</requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video executable</provides>
   </extension>
