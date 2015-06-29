@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.amoboxcbtool" name="[COLOR blue][B]AMO[/B][/COLOR][COLOR green]box[/COLOR] CB Tool" version="0.1.0" provider-name="AdrXbmc">
+<addon id="plugin.program.amoboxcbtool" name="[COLOR blue][B]AMO[/B][/COLOR][COLOR green]box[/COLOR] CB Tool" version="3.0.0" provider-name="AdrXbmc">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="plugin.program.amoboxwizard" version="3.0.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>executable</provides>
