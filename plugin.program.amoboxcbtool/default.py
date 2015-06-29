@@ -7,7 +7,7 @@ import time
 import CheckPath
 import zipfile
 import ntpath
-import plugin.program.amoboxwizard
+
 
 ARTPATH      =  '' + os.sep
 FANART       =  ''
