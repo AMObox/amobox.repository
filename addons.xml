@@ -69,8 +69,8 @@
 </addon>
 
 <addon id="script.amoboxmaintenance"
-       name="AMObox Maintenance"
-       version="3.0.0"
+       name="[COLOR blue][B]AMO[/B][/COLOR][COLOR green]box[/COLOR] Maintenance"
+       version="3.0.1"
        provider-name="AdrXbmc">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
