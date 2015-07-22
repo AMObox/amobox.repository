@@ -10,18 +10,17 @@ import zipfile
 import ntpath
 
 
-
 USER_AGENT = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3'
 base='http://adrxbmc.site90.net'
 ADDON=xbmcaddon.Addon(id='plugin.program.amoboxwizard')
     
     
-VERSION = "2.0.0"
+VERSION = "3.2.0"
 PATH = "AdrXbmc Custom Builds Wizard"            
 
     
 def CATEGORIES():
-    link = OPEN_URL('http://pastebin.com/raw.php?i=38BAy45Y').replace('\n','').replace('\r','')
+    link = OPEN_URL('http://pastebin.com/raw.php?i=RPj08p4N').replace('\n','').replace('\r','')
     match = re.compile('name="(.+?)".+?rl="(.+?)".+?mg="(.+?)".+?anart="(.+?)".+?escription="(.+?)"').findall(link)
     for name,url,iconimage,fanart,description in match:
         addDir(name,url,1,iconimage,fanart,description)

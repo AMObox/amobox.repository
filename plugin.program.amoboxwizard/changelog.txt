@@ -1,2 +1,5 @@
-v2.0.0
+[b]v2.2.0[/b]
+Released Build AMOBox v2.0
+
+[b]v2.0.0[/b]
 Initial Release
