@@ -1,0 +1,20 @@
+[b]v3.0.3[/b]
+- Escolha de Filmes e Series por Genero
+- Escolha de Filmes e Series por rating IMDB
+- Metadados nos Filmes e Series
+
+[b]v3.0.2[/b]
+- Download Filmes ou Serie com legendas
+- Definir Vistas nas Configurações do Addon
+- Definir secção Kids ou Normal ou até mesmo Ambos na Configuração do Menu - Manfarricos
+
+[b]v3.0.2[/b]
+- Secção KIDS
+- Funcionalidade de Pesquisa
+
+[b]v3.0.0[/b]
+- Permite ver filmes e séries
+- Divide os episódios das séries por temporadas
+
+[b]v2.5.0[/b]
+- Primeira Versão
