@@ -1,3 +1,10 @@
+[b]v3.0.4[/b]
+- Correção de API de filmes, desativado de momento! 
+- Re-branding, obrigado johnny88
+- Escolha de servidor no inicio da sessão
+- Escolha de servidor no inicio do download
+- Restruturação do código
+
 [b]v3.0.3[/b]
 - Escolha de Filmes e Series por Genero
 - Escolha de Filmes e Series por rating IMDB
