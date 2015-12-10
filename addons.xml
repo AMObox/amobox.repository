@@ -13,19 +13,4 @@
 		<platform>all</platform>
 	</extension>
 </addon>
-
-<addon id="plugin.program.amoboxwiz" name="[COLOR blue][B]AMO[/B][/COLOR][COLOR green]box[/COLOR] Wizard" version="1.0.0" provider-name="[COLOR blue][B]AMO[/B][/COLOR][COLOR green]box[/COLOR]">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.addon.common" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">[COLOR blue][B]AMO[/B][/COLOR][COLOR green]box[/COLOR] Wizard</summary>
-    <description lang="en">[COLOR blue][B]AMO[/B][/COLOR][COLOR green]box[/COLOR] Wizard provides easy access to [COLOR blue][B]AMO[/B][/COLOR][COLOR green]box[/COLOR] Builds and Various [B]Maintenance[/B] and [B]Development[/B] functions</description>
-    <platform>all</platform>
-  </extension>
-</addon>
 </addons>
