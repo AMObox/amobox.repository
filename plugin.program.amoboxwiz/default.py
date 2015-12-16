@@ -14,12 +14,12 @@ USER_AGENT = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/
 base='amoboxwizard.web44.net'
 ADDON=xbmcaddon.Addon(id='plugin.program.amoboxwiz')
 dialog = xbmcgui.Dialog()    
-VERSION = "1.0.0"
+VERSION = "5.0.0"
 PATH = "AMObox Wizard"            
 
     
 def CATEGORIES():
-    link = OPEN_URL('http://pastebin.com/raw.php?i=AmJ5aB1C').replace('\n','').replace('\r','')
+    link = OPEN_URL('http://pastebin.com/raw/AmJ5aB1C').replace('\n','').replace('\r','')
     match = re.compile('name="(.+?)".+?rl="(.+?)".+?mg="(.+?)".+?anart="(.+?)".+?escription="(.+?)"').findall(link)
     for name,url,iconimage,fanart,description in match:
         addDir(name,url,1,iconimage,fanart,description)
